@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <title>The Great White</title>
+    <style>
+
+      .box {
+        background-color: #eee;
+        display: inline-block;
+        font-family: sans-serif;
+        font-size: 20px;
+        margin: 20px;
+        line-height: 200px;
+        text-align: center;
+        width: 200px;
+        height: 200px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="a" class="box" onclick="clickFunction()">
+      Click
+    </div>
+    <div id="b" class="box" onmouseover="onFunction()">
+      Mouse Over Me
+    </div>
+    <div id="c" class="box" onmouseout="offFunction()">
+      Mouse Off Me
+    </div>
+    <div id="d" class="box" ondblclick="dblcFunction()">
+      Double Click Me
+    </div>
+    <script>
+      function clickFunction() {
+        document.getElementById("a").style.backgroundColor = "magenta";
+
+      }
+
+      function onFunction() {
+        document.getElementById("b").style.backgroundColor = "cyan";
+
+      }
+
+      function offFunction() {
+        document.getElementById("c").style.backgroundColor = "green";
+      }
+
+      function dblcFunction() {
+        document.getElementById("d").style.backgroundColor = "orange";
+      }
+
+      // Write your JavaScript here!
+
+    </script>
+  </body>
+</html>
